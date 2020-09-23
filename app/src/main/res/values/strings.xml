@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Project Naturalist</string>
+    <string name="home_toolbar_title">Naturalist</string>
+    <string name="farmland_habitats">Farmland Habitats</string>
+    <string name="desert_habitats">Desert Habitats</string>
+    <string name="wetland_habitats">Wetland Habitats</string>
+    <string name="animal_name">Animal Name</string>
+    <string name="sample_price">Sample Price</string>
+    <string name="status_animal_sampled">Status</string>
+    <string name="quantity_in_inventory">Quantity</string>
+    <string name="sell_collection_sample">Sell Collection ($60)</string>
+</resources>

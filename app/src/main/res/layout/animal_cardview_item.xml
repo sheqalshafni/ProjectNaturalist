@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:id="@+id/_animalName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/animal_name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/_animalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sample_price"
+            android:layout_below="@+id/_animalName"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/_sampledStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status_animal_sampled"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:id="@+id/_sampledQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity_in_inventory"
+            android:textSize="14sp"
+            android:layout_below="@+id/_sampledStatus"
+            android:layout_alignParentEnd="true"/>
+
+        <Button
+            android:id="@+id/_addAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:text="+1 Sample"
+            android:textAllCaps="false"
+            android:layout_below="@+id/_animalPrice"/>
+
+        <Button
+            android:id="@+id/_stampSample"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:text="Stamp"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/_animalPrice"/>
+
+        <Button
+            android:id="@+id/_deductAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:text="-1 Sample"
+            android:textAllCaps="false"
+            android:textColor="@color/grey"
+            android:clickable="false"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/_sampledQuantity"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/_addAmount"
+            android:background="@color/grey"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
